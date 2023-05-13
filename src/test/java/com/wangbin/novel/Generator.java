@@ -39,7 +39,7 @@ public class Generator {
     public static void main(String[] args) {
 
         // 传入需要生成的表名，多个用英文逗号分隔，所有用 all 表示
-        genCode("sys_user");
+        genCode("home_book");
 
     }
 
@@ -69,12 +69,11 @@ public class Generator {
                         .controller("controller.front")
                         .pathInfo(Collections.singletonMap(OutputFile.mapperXml, PROJECT_PATH + RESOURCE_PATH + "/mapper")))
                 // 模版配置
-//                .templateConfig(builder -> builder.disable(TemplateType.SERVICE)
-//                        .disable(TemplateType.SERVICEIMPL)
-//                        .disable(TemplateType.CONTROLLER))
+                .templateConfig(builder -> builder.disable(TemplateType.SERVICE)
+                        .disable(TemplateType.SERVICEIMPL)
+                        .disable(TemplateType.CONTROLLER))
                 // 策略配置
                 .strategyConfig(builder -> builder.addInclude(getTables(tables)) // 设置需要生成的表名
-                        .addTablePrefix("sys_", "user_","book_")
                         .controllerBuilder()
                         .enableRestStyle()
                         .serviceBuilder()

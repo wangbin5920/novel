@@ -1,7 +1,7 @@
 package com.wangbin.novel.core.config;
 
 import com.github.benmanes.caffeine.cache.Caffeine;
-import com.wangbin.novel.core.common.constant.CacheConsts;
+import com.wangbin.novel.core.constant.CacheConsts;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.caffeine.CaffeineCache;
 import org.springframework.cache.support.SimpleCacheManager;

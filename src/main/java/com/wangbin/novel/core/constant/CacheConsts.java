@@ -1,4 +1,4 @@
-package com.wangbin.novel.core.common.constant;
+package com.wangbin.novel.core.constant;
 
 /**
  * 缓存相关常量
