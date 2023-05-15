@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * Mybatis-Plus 配置类
  *
  * @author wangbin
- * @date 2022/5/16
+ * @date 2023/5/16
  */
 @Configuration
 public class MybatisPlusConfig {

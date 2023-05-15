@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author wangbin
- * @date 2023/05/15
+ * @date 2023/05/11
  */
 public interface HomeFriendLinkMapper extends BaseMapper<HomeFriendLink> {
 

@@ -1,13 +1,12 @@
 package com.wangbin.novel.manager.cache;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import java.util.List;
-
 import com.wangbin.novel.core.constant.CacheConsts;
 import com.wangbin.novel.core.constant.DatabaseConsts;
 import com.wangbin.novel.dao.entity.HomeFriendLink;
 import com.wangbin.novel.dao.mapper.HomeFriendLinkMapper;
 import com.wangbin.novel.dto.resp.HomeFriendLinkRespDto;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
@@ -16,7 +15,7 @@ import org.springframework.stereotype.Component;
  * 友情链接 缓存管理类
  *
  * @author wangbin
- * @date 2022/5/12
+ * @date 2023/5/12
  */
 @Component
 @RequiredArgsConstructor

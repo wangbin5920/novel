@@ -1,5 +1,6 @@
 package com.wangbin.novel.dto.resp;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import java.io.Serial;
@@ -9,7 +10,7 @@ import java.io.Serializable;
  * 首页友情链接 响应DTO
  *
  * @author wangbin
- * @date 2022/5/14
+ * @date 2023/5/14
  */
 @Data
 public class HomeFriendLinkRespDto implements Serializable {
@@ -19,15 +20,13 @@ public class HomeFriendLinkRespDto implements Serializable {
 
     /**
      * 链接名
-     *
-     * @Schema(description = "链接名")
      */
+    @Schema(description = "链接名")
     private String linkName;
 
     /**
      * 链接url
-     *
-     * @Schema(description = "链接url")
      */
+    @Schema(description = "链接url")
     private String linkUrl;
 }

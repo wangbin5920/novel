@@ -11,8 +11,8 @@ import java.util.List;
 /**
  * 代码生成器
  *
- * @author xiongxiaoyang
- * @date 2022/5/11
+ * @author wangbin
+ * @date 2023/5/11
  */
 public class Generator {
 
@@ -39,7 +39,7 @@ public class Generator {
     public static void main(String[] args) {
 
         // 传入需要生成的表名，多个用英文逗号分隔，所有用 all 表示
-        genCode("home_friend_link");
+        genCode("all");
 
     }
 

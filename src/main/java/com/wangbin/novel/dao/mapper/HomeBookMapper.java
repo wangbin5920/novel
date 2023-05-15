@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author wangbin
- * @date 2023/05/13
+ * @date 2023/05/12
  */
 public interface HomeBookMapper extends BaseMapper<HomeBook> {
 

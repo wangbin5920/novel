@@ -6,7 +6,7 @@ import lombok.Getter;
  * 数据库 常量
  *
  * @author wangbin
- * @date 2022/5/12
+ * @date 2023/5/12
  */
 public class DatabaseConsts {
 
