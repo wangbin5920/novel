@@ -1,4 +1,4 @@
-package com.wangbin.novel.manager;
+package com.wangbin.novel.manager.cache;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;

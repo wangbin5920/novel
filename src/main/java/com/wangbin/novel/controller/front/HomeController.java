@@ -3,6 +3,7 @@ package com.wangbin.novel.controller.front;
 import com.wangbin.novel.core.constant.ApiRouterConsts;
 import com.wangbin.novel.core.common.resp.RestResp;
 import com.wangbin.novel.dto.resp.HomeBookRespDto;
+import com.wangbin.novel.dto.resp.HomeFriendLinkRespDto;
 import com.wangbin.novel.service.HomeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,5 +31,16 @@ public class HomeController {
     @GetMapping("/books")
     public RestResp<List<HomeBookRespDto>> listHomeBooks() {
         return homeService.listHomeBooks();
+    }
+
+
+    /**
+     * 首页友情链接列表查询接口
+     *
+     * @Operation(summary = "首页友情链接列表查询接口")
+     */
+    @GetMapping("friend_Link/list")
+    public RestResp<List<HomeFriendLinkRespDto>> listHomeFriendLinks() {
+        return homeService.listHomeFriendLinks();
     }
 }
