@@ -12,7 +12,7 @@ import org.springframework.web.filter.CorsFilter;
 /**
  * 跨域配置
  *
- * @author xiongxiaoyang
+ * @author wangbin
  * @date 2022/5/13
  */
 @Configuration
