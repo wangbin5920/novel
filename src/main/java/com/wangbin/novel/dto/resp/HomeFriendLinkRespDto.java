@@ -19,15 +19,11 @@ public class HomeFriendLinkRespDto implements Serializable {
 
     /**
      * 链接名
-     *
-     * @Schema(description = "链接名")
      */
     private String linkName;
 
     /**
      * 链接url
-     *
-     * @Schema(description = "链接url")
      */
     private String linkUrl;
 }

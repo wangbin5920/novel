@@ -8,14 +8,14 @@ import java.time.LocalDateTime;
 
 /**
  * <p>
- * 友情链接
+ * 小说类别
  * </p>
  *
  * @author wangbin
  * @date 2023/05/18
  */
-@TableName("home_friend_link")
-public class HomeFriendLink implements Serializable {
+@TableName("book_category")
+public class BookCategory implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -23,24 +23,19 @@ public class HomeFriendLink implements Serializable {
     private Long id;
 
     /**
-     * 链接名
+     * 作品方向;0-男频 1-女频
      */
-    private String linkName;
+    private Integer workDirection;
 
     /**
-     * 链接url
+     * 类别名
      */
-    private String linkUrl;
+    private String name;
 
     /**
-     * 排序号
+     * 排序
      */
     private Integer sort;
-
-    /**
-     * 是否开启;0-不开启 1-开启
-     */
-    private Integer isOpen;
 
     /**
      * 创建时间
@@ -61,20 +56,20 @@ public class HomeFriendLink implements Serializable {
         this.id = id;
     }
 
-    public String getLinkName() {
-        return linkName;
+    public Integer getWorkDirection() {
+        return workDirection;
     }
 
-    public void setLinkName(String linkName) {
-        this.linkName = linkName;
+    public void setWorkDirection(Integer workDirection) {
+        this.workDirection = workDirection;
     }
 
-    public String getLinkUrl() {
-        return linkUrl;
+    public String getName() {
+        return name;
     }
 
-    public void setLinkUrl(String linkUrl) {
-        this.linkUrl = linkUrl;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Integer getSort() {
@@ -83,14 +78,6 @@ public class HomeFriendLink implements Serializable {
 
     public void setSort(Integer sort) {
         this.sort = sort;
-    }
-
-    public Integer getIsOpen() {
-        return isOpen;
-    }
-
-    public void setIsOpen(Integer isOpen) {
-        this.isOpen = isOpen;
     }
 
     public LocalDateTime getCreateTime() {
@@ -111,12 +98,11 @@ public class HomeFriendLink implements Serializable {
 
     @Override
     public String toString() {
-        return "HomeFriendLink{" +
+        return "BookCategory{" +
         "id=" + id +
-        ", linkName=" + linkName +
-        ", linkUrl=" + linkUrl +
+        ", workDirection=" + workDirection +
+        ", name=" + name +
         ", sort=" + sort +
-        ", isOpen=" + isOpen +
         ", createTime=" + createTime +
         ", updateTime=" + updateTime +
         "}";

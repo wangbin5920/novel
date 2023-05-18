@@ -33,11 +33,8 @@ public class HomeController {
         return homeService.listHomeBooks();
     }
 
-
     /**
      * 首页友情链接列表查询接口
-     *
-     * @Operation(summary = "首页友情链接列表查询接口")
      */
     @GetMapping("friend_Link/list")
     public RestResp<List<HomeFriendLinkRespDto>> listHomeFriendLinks() {

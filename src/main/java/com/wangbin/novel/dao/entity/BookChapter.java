@@ -8,14 +8,14 @@ import java.time.LocalDateTime;
 
 /**
  * <p>
- * 友情链接
+ * 小说章节
  * </p>
  *
  * @author wangbin
  * @date 2023/05/18
  */
-@TableName("home_friend_link")
-public class HomeFriendLink implements Serializable {
+@TableName("book_chapter")
+public class BookChapter implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -23,33 +23,32 @@ public class HomeFriendLink implements Serializable {
     private Long id;
 
     /**
-     * 链接名
+     * 小说ID
      */
-    private String linkName;
+    private Long bookId;
 
     /**
-     * 链接url
+     * 章节号
      */
-    private String linkUrl;
+    private Integer chapterNum;
 
     /**
-     * 排序号
+     * 章节名
      */
-    private Integer sort;
+    private String chapterName;
 
     /**
-     * 是否开启;0-不开启 1-开启
+     * 章节字数
      */
-    private Integer isOpen;
+    private Integer wordCount;
 
     /**
-     * 创建时间
+     * 是否收费;1-收费 0-免费
      */
+    private Integer isVip;
+
     private LocalDateTime createTime;
 
-    /**
-     * 更新时间
-     */
     private LocalDateTime updateTime;
 
 
@@ -61,36 +60,44 @@ public class HomeFriendLink implements Serializable {
         this.id = id;
     }
 
-    public String getLinkName() {
-        return linkName;
+    public Long getBookId() {
+        return bookId;
     }
 
-    public void setLinkName(String linkName) {
-        this.linkName = linkName;
+    public void setBookId(Long bookId) {
+        this.bookId = bookId;
     }
 
-    public String getLinkUrl() {
-        return linkUrl;
+    public Integer getChapterNum() {
+        return chapterNum;
     }
 
-    public void setLinkUrl(String linkUrl) {
-        this.linkUrl = linkUrl;
+    public void setChapterNum(Integer chapterNum) {
+        this.chapterNum = chapterNum;
     }
 
-    public Integer getSort() {
-        return sort;
+    public String getChapterName() {
+        return chapterName;
     }
 
-    public void setSort(Integer sort) {
-        this.sort = sort;
+    public void setChapterName(String chapterName) {
+        this.chapterName = chapterName;
     }
 
-    public Integer getIsOpen() {
-        return isOpen;
+    public Integer getWordCount() {
+        return wordCount;
     }
 
-    public void setIsOpen(Integer isOpen) {
-        this.isOpen = isOpen;
+    public void setWordCount(Integer wordCount) {
+        this.wordCount = wordCount;
+    }
+
+    public Integer getIsVip() {
+        return isVip;
+    }
+
+    public void setIsVip(Integer isVip) {
+        this.isVip = isVip;
     }
 
     public LocalDateTime getCreateTime() {
@@ -111,12 +118,13 @@ public class HomeFriendLink implements Serializable {
 
     @Override
     public String toString() {
-        return "HomeFriendLink{" +
+        return "BookChapter{" +
         "id=" + id +
-        ", linkName=" + linkName +
-        ", linkUrl=" + linkUrl +
-        ", sort=" + sort +
-        ", isOpen=" + isOpen +
+        ", bookId=" + bookId +
+        ", chapterNum=" + chapterNum +
+        ", chapterName=" + chapterName +
+        ", wordCount=" + wordCount +
+        ", isVip=" + isVip +
         ", createTime=" + createTime +
         ", updateTime=" + updateTime +
         "}";
