@@ -36,7 +36,8 @@ public class BookCategoryCacheManager {
                 BookCategoryRespDto.builder()
                         .id(v.getId())
                         .name(v.getName())
-                        .build()).toList();
+                        .build())
+                .toList();
     }
 
 }
